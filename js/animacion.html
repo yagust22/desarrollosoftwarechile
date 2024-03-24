@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animacion</title>
+</head>
+<body>
+    <div class="escribiendo">
+          <h1> Desarrollo web.</h1>
+    </div>
+</body>
+<style>
+h1{
+    font-family: monospace;
+    border-right: 2.5px solid green;
+    animation: cursor .5s infinite , 
+    escribiendo 3.5s  steps(20) infinite;
+    white-space:nowrap;
+    overflow: hidden;
+
+
+
+}
+.escribiendo{
+    display: inline-block;
+}
+@keyframes cursor{
+0%{
+    border-color: transparent;
+}
+50%{
+  border-color: green;
+}
+}
+@keyframes escribiendo{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+</style>
+</html>
